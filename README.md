@@ -2,8 +2,7 @@
 
 ## Run timetracker application
 The application can be started with
-$ docker run -d -p 4200:4200 alirizasaral/timetracker:1
-
+$ docker run -d -p 4200:4200 utkarshs73/timetracker:v1
 ## Access timetracker application
 Here are some examples to interact with the application.
 
