@@ -1,0 +1,40 @@
+{
+  "timerecords": [
+    {
+      "email": "aa@bb.com",
+      "start_time": "28.12.2018 04:00",
+      "end_time": "28.12.2018 09:00",
+      "id": 1
+    },
+    {
+      "email": "bb@bb.com",
+      "start_time": "29.12.2018 05:00",
+      "end_time": "29.12.2018 08:00",
+      "id": 2
+    },
+    {
+      "email": "aa@bb.com",
+      "start_time": "03.11.2018 04:00",
+      "end_time": "03.11.2018 09:00",
+      "id": 3
+    },
+    {
+      "email": "aa@bb.com",
+      "start_time": "02.11.2018 04:00",
+      "end_time": "02.11.2018 09:00",
+      "id": 4
+    },
+    {
+      "email": "aa@bb.com",
+      "start_time": "01.11.2018 04:00",
+      "end_time": "01.11.2018 09:00",
+      "id": 5
+    },
+    {
+      "email": "bb@bb.com",
+      "start_time": "03.11.2018 04:00\t",
+      "end_time": "03.11.2018 09:00\t",
+      "id": 6
+    }
+  ]
+}

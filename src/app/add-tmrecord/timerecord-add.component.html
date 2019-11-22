@@ -1,0 +1,37 @@
+<div class="example-container mat-elevation-z8">
+  <div class="example-loading-shade"
+       *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <div class="button-row">
+    <a mat-flat-button color="primary" [routerLink]="['/timerecords']">List</a>
+  </div>
+  <mat-card class="example-card">
+    <form [formGroup]="timerecordForm" (ngSubmit)="onFormSubmit()">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" formControlName="email"
+               [errorStateMatcher]="matcher">
+        <mat-error>
+          <span *ngIf="!timerecordForm.get('email').valid && timerecordForm.get('email').touched">Please enter Email</span>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Start Time" formControlName="start_time"
+               [errorStateMatcher]="matcher">
+        <mat-error>
+          <span *ngIf="!timerecordForm.get('start_time').valid && timerecordForm.get('start_time').touched">Please enter Start Time</span>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="End Time" formControlName="end_time"
+               [errorStateMatcher]="matcher">
+        <mat-error>
+          <span *ngIf="!timerecordForm.get('end_time').valid && timerecordForm.get('end_time').touched">Please enter End Time</span>
+        </mat-error>
+      </mat-form-field>
+      <div class="button-row">
+        <button type="submit" [disabled]="!timerecordForm.valid" mat-flat-button color="primary">Save</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
