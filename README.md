@@ -13,5 +13,3 @@ Add button will show page to add new employee time records with information:
 -end time
 Employee time records can be searched by email using search options on screen. 
 
-Docker Pull Command
-docker pull alirizasaral/timetracker
